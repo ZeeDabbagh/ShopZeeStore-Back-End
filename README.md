@@ -52,4 +52,4 @@ And make sure to follow me on Github at https://github.com/zeeDabbagh!
 
 ## Deployed Application 
 
-https://github.com/ZeeDabbagh/ecommerce-back-end
+https://drive.google.com/file/d/1_TENgtwbjUhN51EhSExlZGKP8npr--Hr/view
