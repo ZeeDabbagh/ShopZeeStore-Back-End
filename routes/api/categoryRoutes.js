@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
   .then((category) => {
     if (!category) {
       res.status(404).json({message: "Category doesn't exist"})
-      return;
+
     }
     res.json(category)
   })
@@ -72,10 +72,10 @@ router.delete('/:id', (req, res) => {
 
   .then((deletedCategory) => {
     if (deletedCategory === 0) {
-      res.status(404).json({message: "No such category exists"})
+      res.status(404).json({message: 'No such category exists'})
       return
     }
-    res.json({ message: "Category was successfully deleted"})
+    res.json({ message: 'Category was successfully deleted'})
   })
   .catch((err) => {
     res.status(400).json(err)
