@@ -16,9 +16,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  const categoryID = req.params.id
 
-  Category.findByPk(categoryID, {
+  Category.findByPk(req.params.id, {
     include: [{
       model: Product
     }]
