@@ -73,7 +73,6 @@ router.delete('/:id', (req, res) => {
   .then((deletedCategory) => {
     if (deletedCategory === 0) {
       res.status(404).json({message: 'No such category exists'})
-      return
     }
     res.json({ message: 'Category was successfully deleted'})
   })
